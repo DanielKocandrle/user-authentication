@@ -23,9 +23,9 @@ cd user-authentication
 composer install
 ```
 
-Make directories `db/`, `temp/` and `log/` writable.
+Make directories `data/`, `temp/` and `log/` writable.
 
-By default, SQLite is used as the database which is located in the `db/users.sqlite.db` file. If you would like to switch to a different database, configure access in the `config/local.neon` file:
+By default, SQLite is used as the database which is located in the `data/db.sqlite` file. If you would like to switch to a different database, configure access in the `config/local.neon` file:
 
 ```neon
 database:
@@ -34,7 +34,7 @@ database:
 	password: ***
 ```
 
-And then create the `users` table using SQL statements in the [db/users.mysql.sql](db/users.mysql.sql) file.
+And then create the `users` table using SQL statements in the [data/mysql.sql](data/mysql.sql) file.
 
 The simplest way to get started is to start the built-in PHP server in the root directory of your project:
 
