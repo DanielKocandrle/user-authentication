@@ -19,7 +19,7 @@ final class RouterFactory
 	{
 		$router = new RouteList;
 		// Default route that maps to the Admin Dashboard
-		$router->addRoute('<presenter>/<action>', 'Admin:Dashboard:default');
+		$router->addRoute('<presenter>/<action>', 'Admin:Home:default');
 		return $router;
 	}
 }
